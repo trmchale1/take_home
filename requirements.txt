@@ -1,0 +1,7 @@
+uvicorn[standard]==0.15.0
+fastapi==0.70.0
+typing
+pydantic
+uvicorn 
+gunicorn 
+databases[postgresql]
