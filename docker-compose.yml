@@ -19,8 +19,11 @@ services:
            build:
                 context: .
                 dockerfile: Dockerfile
-           working_dir: /demo_test/     
-           command: uvicorn main:app --port 8000 --reload
+           command: uvicorn main:app --host 0.0.0.0 --reload
+           volumes:
+               - .:/take_home
+           ports:
+              - 8000:80
            links:
              - db
            restart: on-failure
