@@ -11,7 +11,7 @@ involved the library libpq-fe.h.
 
 In retrospect I would have been more successful in the project if:
 
-- I knew the commands `docker system prune` and `docker system prune -a`, manually deleting files above the root directory was not a good idea. This mistake set me back a day.
+- I knew the commands `docker stop [image]`,`docker system prune` and `docker system prune -a`, manually deleting files above the root directory was not a good idea. This mistake set me back a day.
 
 - I had a better understanding of where Docker images are created and how they can communicate 
  
