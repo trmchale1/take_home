@@ -7,9 +7,6 @@ ENV MODE=$mode
 WORKDIR /app
 COPY . /app
 
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
-
 RUN apt-get update && apt-get install -y lsb-release && apt-get clean all
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install curl
