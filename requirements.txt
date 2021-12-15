@@ -5,3 +5,4 @@ pydantic
 gunicorn 
 databases[postgresql]
 sqlalchemy
+psycopg2
